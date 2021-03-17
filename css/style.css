@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: beige;
+}
+
+button {
+    outline: none;
+    padding: 0;
+}
+
+
+.letters1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.letters2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.note:hover {
+    cursor: pointer;
+}
+
+.white {
+    background: #fff;
+    width: 50px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 0px 2px;
+    margin: 0 -2px;
+    box-sizing: border-box;
+}
+
+.white:hover {
+    background: #ddd;
+}
+
+.white.active {
+    background: #aaa;
+}
+
+.black {
+    background: #111;
+    width: 36px;
+    height: 130px;
+    position: absolute;
+    margin: 0;
+    margin-left: -20px;
+}
+
+.black:hover {
+    background: #444;
+}
+
+.black.active {
+  background: #666;
+}
