@@ -12,6 +12,58 @@ button {
 }
 
 
+.btn {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+    color: #f7f7f7;
+}
+
+.btn:active {
+    background-color: #8F5613 !important;
+    border-color: #8F5613 !important;
+}
+
+.btn-light {
+    background: transparent;
+    border: 2px solid #cd6326;
+}
+
+.btn-light:hover,
+.btn-orange {
+    background: #cd6326;
+}
+
+.btn-orange:hover {
+    background: #e39128;
+}
+
+
+.control {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px -2px;
+}
+
+.control .btn:nth-child(1) {
+    border-radius: 5px 0 0 5px;
+}
+
+.control .btn:nth-child(2) {
+    border-radius: 0 5px 5px 0;
+}
+
+
 .letters1 {
     display: flex;
     justify-content: space-around;
