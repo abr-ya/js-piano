@@ -1,9 +1,32 @@
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     height: 100vh;
     background-color: beige;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+
+main {
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid grey;
 }
 
 button {
@@ -112,4 +135,13 @@ button {
 
 .black.active {
   background: #666;
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin-left: 20px;
 }

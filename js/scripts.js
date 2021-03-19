@@ -5,6 +5,7 @@ const main = () => {
     const keyForPlay = ['D', 'F', 'G', 'H', 'J', 'K', 'L', 'R', 'T', 'U', 'I', 'O'];
     const noteId = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C#', 'D#', 'F#', 'G#', 'A#'];
     const modeBtns = document.querySelectorAll('.control button');
+    const fsBtn = document.querySelector('#fsbtn');
 
 
     // подпись ноты/буквы
@@ -40,7 +41,6 @@ const main = () => {
     setBtnClasses(showNotes);
 
     const modeBtnClickHandler = (btn) => {
-        console.log(btn.dataset.mode);
         showNotes = btn.dataset.mode === 'not';
         setBtnClasses(showNotes);
         setLetters(showNotes);
@@ -78,6 +78,20 @@ const main = () => {
     }
 
 
+    // переключение полноэкранного режима
+    const toggleFullScreen = () => {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+            fsBtn.innerHTML = 'Window';
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+          fsBtn.innerHTML = 'Fullscreen';
+        }
+    };
+
+
     // вешаем обработчики
     // клавиатура
     document.addEventListener("keydown", (e) => {
@@ -95,7 +109,9 @@ const main = () => {
 
     for (let btn of modeBtns) {
         btn.addEventListener('click', (e) => modeBtnClickHandler(e.target));
-    };  
+    };
+    
+    fsBtn.addEventListener('click', toggleFullScreen);
 }
 
 document.addEventListener('DOMContentLoaded', main);

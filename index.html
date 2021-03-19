@@ -6,43 +6,54 @@
 		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="control">
-				<button class="btn" data-mode="not">Notes</button>
-				<button class="btn" data-mode="let">Letters</button>
+		<header>
+			<h1>Virtual Piano</h1>
+		</header>
+		<main>
+			<div class="wrapper">
+				<div class="control">
+					<button class="btn" data-mode="not">Notes</button>
+					<button class="btn" data-mode="let">Letters</button>
+				</div>
+				<div class="letters1">
+					<div class="letter-top">-</div>
+					<div class="letter-top">-</div>
+					<div></div>
+					<div class="letter-top">-</div>
+					<div class="letter-top">-</div>
+					<div class="letter-top">-</div>
+				</div>
+				<div class="keys">
+					<button id="keyC" data-note="C" class="note white"></button>
+					<button id="keyC#" data-note="C#" class="note black"></button>
+					<button id="keyD" data-note="D" class="note white"></button>
+					<button id="keyD#" data-note="D#" class="note black"></button>
+					<button id="keyE" data-note="E" class="note white"></button>
+					<button id="keyF" data-note="F" class="note white"></button>
+					<button id="keyF#" data-note="F#" class="note black"></button>
+					<button id="keyG" data-note="G" class="note white"></button>
+					<button id="keyG#" data-note="G#" class="note black"></button>
+					<button id="keyA" data-note="A" class="note white"></button>
+					<button id="keyA#" data-note="A#" class="note black"></button>
+					<button id="keyB" data-note="B" class="note white"></button>
+				</div>
+				<div class="letters2">
+					<div class="letter-bottom">-</div>
+					<div class="letter-bottom">-</div>
+					<div class="letter-bottom">-</div>
+					<div class="letter-bottom">-</div>
+					<div class="letter-bottom">-</div>
+					<div class="letter-bottom">-</div>
+					<div class="letter-bottom">-</div>
+				</div>
 			</div>
-			<div class="letters1">
-				<div class="letter-top">-</div>
-				<div class="letter-top">-</div>
-				<div></div>
-				<div class="letter-top">-</div>
-				<div class="letter-top">-</div>
-				<div class="letter-top">-</div>
+			<div class="right">
+				<button class="btn btn-orange" id="fsbtn">
+					Fullscreen
+				</button>
 			</div>
-			<div class="keys">
-				<button id="keyC" data-note="C" class="note white"></button>
-				<button id="keyC#" data-note="C#" class="note black"></button>
-				<button id="keyD" data-note="D" class="note white"></button>
-				<button id="keyD#" data-note="D#" class="note black"></button>
-				<button id="keyE" data-note="E" class="note white"></button>
-				<button id="keyF" data-note="F" class="note white"></button>
-				<button id="keyF#" data-note="F#" class="note black"></button>
-				<button id="keyG" data-note="G" class="note white"></button>
-				<button id="keyG#" data-note="G#" class="note black"></button>
-				<button id="keyA" data-note="A" class="note white"></button>
-				<button id="keyA#" data-note="A#" class="note black"></button>
-				<button id="keyB" data-note="B" class="note white"></button>
-			</div>
-			<div class="letters2">
-				<div class="letter-bottom">-</div>
-				<div class="letter-bottom">-</div>
-				<div class="letter-bottom">-</div>
-				<div class="letter-bottom">-</div>
-				<div class="letter-bottom">-</div>
-				<div class="letter-bottom">-</div>
-				<div class="letter-bottom">-</div>
-			</div>
-		</div>
+		</main>
+		<footer></footer>
 
 		<audio id="C" src="./sound/piano1/piano_C.mp3"></audio>
 		<audio id="C#" src="./sound/piano1/piano_Cs.mp3"></audio>
